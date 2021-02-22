@@ -1,0 +1,13 @@
+# tmux-remove.yml
+
+---
+
+ - name: Remove tmux
+   hosts: control
+   become: true
+
+   tasks: 
+   - name: Removing tmux
+     yum:
+       name: tmux
+       state: absent

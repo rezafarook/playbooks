@@ -1,0 +1,12 @@
+# myCopy.yml
+
+---
+
+ - name: Copy passwd file
+   hosts: pi
+
+   tasks:
+   - name: Copying file to raspberrypi
+     copy:
+       src: /etc/passwd
+       dest: /var/tmp/

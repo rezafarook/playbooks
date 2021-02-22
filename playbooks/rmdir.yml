@@ -1,0 +1,12 @@
+# rmdir.yml
+
+---
+
+ - name: Remove /var/tmpMRF
+   hosts: pi
+
+   tasks:
+   - name: Removing Directory
+     file:
+       path: /var/tmp/MRF
+       state: absent

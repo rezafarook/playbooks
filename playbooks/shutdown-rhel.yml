@@ -1,0 +1,8 @@
+---
+- name: shutdown rhel and control node
+  hosts: rhel:control
+  become: true
+
+  tasks:
+  - name: shutdown server
+    command: shutdown -h now

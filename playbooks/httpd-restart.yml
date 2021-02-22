@@ -1,0 +1,10 @@
+---
+- name: restart httpd
+  hosts: webserver
+  become: true
+
+  tasks:
+  - name: restart httpd
+    service:
+      name: httpd
+      state: restarted

@@ -1,0 +1,6 @@
+---
+  
+ - hosts: all
+   tasks:
+    - name: Uname
+      shell: uname -a

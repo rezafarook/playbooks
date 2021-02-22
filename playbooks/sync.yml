@@ -1,0 +1,7 @@
+---
+- name:  Synchronization using rsync protocol on delegate host (push)
+  ansible.posix.synchronize:
+    src: /home/reza/scripts/
+    dest: rsync://jersey.optonline.net/home/reza/scripts/
+    delegate_to: delegate.host
+

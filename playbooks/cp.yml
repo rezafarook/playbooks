@@ -1,0 +1,10 @@
+---
+ - name: Copy File
+   hosts: control
+   become: True
+
+   tasks: 
+    - name: Copy file
+      copy:
+        src: /etc/passwd
+        dest: /var/tmp/

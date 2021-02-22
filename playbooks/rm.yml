@@ -1,0 +1,12 @@
+# rm.yml
+
+---
+
+ - name: remove /var/tmp/passwd
+   hosts: pi
+
+   tasks:
+   - name: remove file temp passwd file from /var/tmp/ on RaspBerrypi
+     file:
+       path: /var/tmp/passwd
+       state: absent

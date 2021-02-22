@@ -1,0 +1,7 @@
+---
+
+  - name: Install nginix
+    become: True
+    tasks: 
+     -name: Install nginix
+      yum : name=nginix state=installed 

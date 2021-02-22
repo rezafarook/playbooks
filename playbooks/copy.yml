@@ -1,0 +1,12 @@
+# copy.yml
+
+---
+
+ - name: Copy password file
+   hosts: pi
+
+   tasks:
+   - name: Copy file to RaspBerrypi
+     copy:
+       src: /etc/passwd
+       dest: /var/tmp

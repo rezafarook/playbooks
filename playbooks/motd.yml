@@ -1,0 +1,12 @@
+---
+- name: Installing nginx & start service
+  hosts: colombo.optonline.net
+  become: true
+  vars:
+   motd_welcome: "Welcome to Colombo\n"
+
+  tasks:
+  - name: create motd
+    copy: 
+      dest: /etc/motd
+      content: "{{ motd_welcome }}"

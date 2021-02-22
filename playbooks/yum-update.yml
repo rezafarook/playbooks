@@ -1,0 +1,7 @@
+---
+
+ - hosts: rhel:local
+   become: true
+   tasks:
+     - name: yum update
+       yum: name=* state=latest

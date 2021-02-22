@@ -1,0 +1,12 @@
+[rhel]
+colombo ansible_host=colombo.optonline.net
+
+[macos]
+macbook ansible_host=macbook.optonline.net
+#imac ansible_host=imac.optonline.net
+
+[pi]
+pi ansible_host=pi.optonline.net
+
+[local]
+control ansible_connection=local
